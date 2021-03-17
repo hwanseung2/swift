@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hO7-Qh-f3m">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="JoG-UX-2D4">
+            <objects>
+                <navigationController id="hO7-Qh-f3m" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wEW-Zy-7Zo">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vyg-BR-nfX" kind="relationship" relationship="rootViewController" id="a1F-1B-wn0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Bc-fd-7I8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-870" y="108"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YI7-Ho-jrP">
+            <objects>
+                <viewController id="Vyg-BR-nfX" customClass="ViewController" customModule="WebViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ORn-au-Eze">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeW-Oz-3VI">
+                                <rect key="frame" x="187" y="481" width="40" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="Login:" destination="Xhb-X4-XU9" eventType="touchUpInside" id="KJi-F4-Qa2"/>
+                                    <action selector="click_move:" destination="Vyg-BR-nfX" eventType="touchUpInside" id="EWU-3W-iTq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9YC-eU-cvY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CeW-Oz-3VI" firstAttribute="centerX" secondItem="ORn-au-Eze" secondAttribute="centerX" id="4PF-sa-tLU"/>
+                            <constraint firstItem="CeW-Oz-3VI" firstAttribute="centerY" secondItem="ORn-au-Eze" secondAttribute="centerY" constant="50" id="BZO-DY-gqw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="V8a-ke-Gy7"/>
+                    <connections>
+                        <outlet property="Click_Btn" destination="CeW-Oz-3VI" id="AAt-Ck-beU"/>
+                        <outlet property="Click_move" destination="CeW-Oz-3VI" id="Tit-47-nDB"/>
+                        <outlet property="click_move" destination="CeW-Oz-3VI" id="xVF-17-A0F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJU-g1-WqG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Xhb-X4-XU9" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="113" y="109"/>
+        </scene>
+        <!--Detail Controller-->
+        <scene sceneID="Eyt-OA-uLv">
+            <objects>
+                <viewController storyboardIdentifier="DetailController" id="cyR-Gi-gjz" customClass="DetailController" customModule="WebViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zSo-cP-Vek">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="z3B-WY-T6J"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aY6-dA-dcw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="108"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
