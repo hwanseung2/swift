@@ -31,8 +31,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 if let title = r["title"] as? String{
                 cell.LabelText.text = title
                 }
+            }
         }
-    }
         
         
         return cell
